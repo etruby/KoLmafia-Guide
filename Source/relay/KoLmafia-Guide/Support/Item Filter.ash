@@ -58,9 +58,9 @@ item [int] ItemFilterGetPotionsWithNumericModifiers(string [int] modifiers)
     {
         item [int] first_layer_list;
         if (!(__if_potions_with_numeric_modifiers contains mod))
-            ItemFilterInitialisePotionsForModifier(modifier);
+            ItemFilterInitialisePotionsForModifier(mod);
         
-        first_layer_list = __if_potions_with_numeric_modifiers[modifier];
+        first_layer_list = __if_potions_with_numeric_modifiers[mod];
         
         
         foreach key, it in first_layer_list
@@ -107,7 +107,7 @@ item [int] ItemFilterGetPotionsCouldPullToAddToNumericModifier(string [int] modi
 }
 
 
-item [int] ItemFilterGetPotionsCouldPullToAddToNumericModifier(string modifier, float minimum_modifier, boolean [item] blocklist)
+item [int] ItemFilterGetPotionsCouldPullToAddToNumericModifier(string mod, float minimum_modifier, boolean [item] blocklist)
 {
-    return ItemFilterGetPotionsCouldPullToAddToNumericModifier(listMake(modifier), minimum_modifier, blocklist);
+    return ItemFilterGetPotionsCouldPullToAddToNumericModifier(listMake(mod), minimum_modifier, blocklist);
 }

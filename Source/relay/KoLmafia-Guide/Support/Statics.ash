@@ -69,7 +69,7 @@ int my_path_id_legacy()
 
 float numeric_modifier_replacement(item it, string mod)
 {
-    string modifier_lowercase = modifier.to_lower_case();
+    string modifier_lowercase = mod.to_lower_case();
     float additional = 0;
     if (my_path_id_legacy() == PATH_G_LOVER && !it.contains_text("g") && !it.contains_text("G"))
     	return 0.0;
@@ -224,19 +224,19 @@ boolean [item] equipmentWithNumericModifier(string mod)
     {
         //Build it:
         boolean [item] blank;
-        __equipment_by_numeric_modifier[modifier] = blank;
+        __equipment_by_numeric_modifier[mod] = blank;
         foreach it in __equipment
         {
             if (dynamic_items contains it) continue;
-            if (it.numeric_modifier(modifier) != 0.0)
-                __equipment_by_numeric_modifier[modifier][it] = true;
+            if (it.numeric_modifier(mod) != 0.0)
+                __equipment_by_numeric_modifier[mod][it] = true;
         }
     }
     //Certain equipment is dynamic. Inspect them dynamically:
     boolean [item] extra_results;
     foreach it in dynamic_items
     {
-        if (it.numeric_modifier_replacement(modifier) != 0.0)
+        if (it.numeric_modifier_replacement(mod) != 0.0)
         {
             extra_results[it] = true;
         }
@@ -245,7 +245,7 @@ boolean [item] equipmentWithNumericModifier(string mod)
     string secondary_modifier = "";
     foreach e in $elements[hot,cold,spooky,stench,sleaze]
     {
-        if (modifier == e + " damage")
+        if (mod == e + " damage")
             secondary_modifier = e + " spell damage";
     }
     if (secondary_modifier != "")
@@ -255,11 +255,11 @@ boolean [item] equipmentWithNumericModifier(string mod)
     }
     
     if (extra_results.count() == 0)
-        return __equipment_by_numeric_modifier[modifier];
+        return __equipment_by_numeric_modifier[mod];
     else
     {
         //Add extras:
-        foreach it in __equipment_by_numeric_modifier[modifier]
+        foreach it in __equipment_by_numeric_modifier[mod]
         {
             extra_results[it] = true;
         }

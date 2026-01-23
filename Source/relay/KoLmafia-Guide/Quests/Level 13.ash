@@ -250,7 +250,7 @@ boolean generateTowerFamiliarWeightMethod(string [int] how, string [int] immedia
         TFWMInternalModifier mod = weight_modifiers[key];
         if (mod.have && mod.from_familiar_equipment)
         {
-            if (modifier.bonus > best_familiar_equipment.bonus)
+            if (mod.bonus > best_familiar_equipment.bonus)
                 best_familiar_equipment = mod;
         }
     }
@@ -266,7 +266,7 @@ boolean generateTowerFamiliarWeightMethod(string [int] how, string [int] immedia
             if (best_familiar_equipment.have && mod.from_familiar_equipment && !TFWMInternalModifierEquals(best_familiar_equipment, mod)) //not our chosen familiar equipment
                 continue;
             how.listAppend(description);
-            total += modifier.bonus;
+            total += mod.bonus;
         }
         else if (mod.obtainable_now)
         {

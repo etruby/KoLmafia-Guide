@@ -890,7 +890,7 @@ float item_drop_modifier_ignoring_plants()
         if (my_location.locationHasPlant("Kelptomaniac"))
             mod -= 40.0;
     }
-    return modifier;
+    return mod;
 }
 
 int monster_level_adjustment_ignoring_plants() //this is unsafe to use in heavy rains
