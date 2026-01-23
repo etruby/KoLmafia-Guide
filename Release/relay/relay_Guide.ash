@@ -4495,8 +4495,8 @@ void initialiseIOTMsUsable()
             if (campground contains it)
                 __iotms_usable[it] = true;
         }
-        if (campground contains $item[Asdon Martin keyfob (on ring)])
-            __iotms_usable[$item[Asdon Martin keyfob (on ring)]] = true;
+        if (campground contains $item[Asdon Martin keyfob (on ring) (on ring)])
+            __iotms_usable[$item[Asdon Martin keyfob (on ring) (on ring)]] = true;
     }
     if (get_property_boolean("hasDetectiveSchool"))
         __iotms_usable[$item[detective school application]] = true;
@@ -35749,7 +35749,7 @@ void setUpState()
             minus_combat_source_count += 5 * 4;
         if (my_path().id == PATH_AVATAR_OF_JARLSBERG && $skill[chocolatesphere].skill_is_usable())
             minus_combat_source_count += 5 * 3;
-        if (__iotms_usable[$item[Asdon Martin keyfob (on ring)]])
+        if (__iotms_usable[$item[Asdon Martin keyfob (on ring) (on ring)]])
             minus_combat_source_count += 10;
         if (my_path().id == PATH_AVATAR_OF_SNEAKY_PETE)
         {
@@ -48829,7 +48829,7 @@ void IOTMKGBriefcaseGenerateResource(ChecklistEntry [int] resource_entries)
 RegisterTaskGenerationFunction("IOTMAsdonMartinGenerateTasks");
 void IOTMAsdonMartinGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [int] optional_task_entries, ChecklistEntry [int] future_task_entries)
 {
-    if (!__iotms_usable[$item[Asdon martin keyfob]])
+    if (!__iotms_usable[$item[Asdon Martin keyfob (on ring)]])
         return;
     //BanishIsActive
     //FIXME test get_fuel() in point release
@@ -48854,7 +48854,7 @@ void IOTMAsdonMartinGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEn
 RegisterResourceGenerationFunction("IOTMAsdonMartinGenerateResource");
 void IOTMAsdonMartinGenerateResource(ChecklistEntry [int] resource_entries)
 {
-    if (!__iotms_usable[$item[Asdon martin keyfob]])
+    if (!__iotms_usable[$item[Asdon Martin keyfob (on ring)]])
         return;
     ChecklistEntry entry = ChecklistEntryMake(516);
     entry.importance_level = 0;

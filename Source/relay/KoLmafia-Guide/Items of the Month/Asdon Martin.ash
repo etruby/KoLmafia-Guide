@@ -5,7 +5,7 @@ import "relay/KoLmafia-Guide/Support/Ingredients.ash"
 RegisterTaskGenerationFunction("IOTMAsdonMartinGenerateTasks");
 void IOTMAsdonMartinGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [int] optional_task_entries, ChecklistEntry [int] future_task_entries)
 {
-    if (!__iotms_usable[$item[Asdon martin keyfob]])
+    if (!__iotms_usable[$item[Asdon Martin keyfob (on ring)]])
         return;
     //BanishIsActive
     //FIXME test get_fuel() in point release
@@ -30,7 +30,7 @@ void IOTMAsdonMartinGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEn
 RegisterResourceGenerationFunction("IOTMAsdonMartinGenerateResource");
 void IOTMAsdonMartinGenerateResource(ChecklistEntry [int] resource_entries)
 {
-    if (!__iotms_usable[$item[Asdon martin keyfob]])
+    if (!__iotms_usable[$item[Asdon Martin keyfob (on ring)]])
         return;
     ChecklistEntry entry = ChecklistEntryMake(516);
     entry.importance_level = 0;
