@@ -64,7 +64,7 @@ static
 
 int my_path_id_legacy()
 {
-    return my_path_id();
+    return my_path().id;
 }
 
 float numeric_modifier_replacement(item it, string mod)

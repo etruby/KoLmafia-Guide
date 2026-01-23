@@ -4495,8 +4495,8 @@ void initialiseIOTMsUsable()
             if (campground contains it)
                 __iotms_usable[it] = true;
         }
-        if (campground contains $item[Asdon Martin keyfob])
-            __iotms_usable[$item[Asdon Martin keyfob]] = true;
+        if (campground contains $item[Asdon Martin keyfob (on ring)])
+            __iotms_usable[$item[Asdon Martin keyfob (on ring)]] = true;
     }
     if (get_property_boolean("hasDetectiveSchool"))
         __iotms_usable[$item[detective school application]] = true;
@@ -35749,7 +35749,7 @@ void setUpState()
             minus_combat_source_count += 5 * 4;
         if (my_path().id == PATH_AVATAR_OF_JARLSBERG && $skill[chocolatesphere].skill_is_usable())
             minus_combat_source_count += 5 * 3;
-        if (__iotms_usable[$item[Asdon Martin keyfob]])
+        if (__iotms_usable[$item[Asdon Martin keyfob (on ring)]])
             minus_combat_source_count += 10;
         if (my_path().id == PATH_AVATAR_OF_SNEAKY_PETE)
         {

@@ -1,13 +1,6 @@
 import "relay/KoLmafia-Guide/Support/Math.ash"
 import "relay/KoLmafia-Guide/Support/List.ash"
 
-buffer to_buffer(string str)
-{
-	buffer result;
-	result.append(str);
-	return result;
-}
-
 buffer copyBuffer(buffer buf)
 {
     buffer result;
