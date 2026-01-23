@@ -1,4 +1,4 @@
-import "relay/Guide/Support/Banishers.ash";
+import "relay/KoLmafia-Guide/Support/Banishers.ash";
 
 void SEventsGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [int] optional_task_entries, ChecklistEntry [int] future_task_entries)
 {

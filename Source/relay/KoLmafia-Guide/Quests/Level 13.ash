@@ -1,6 +1,6 @@
-import "relay/Guide/Support/Spell Damage.ash"
-import "relay/Guide/Support/Passive Damage.ash"
-import "relay/Guide/Support/Item Filter.ash"
+import "relay/KoLmafia-Guide/Support/Spell Damage.ash"
+import "relay/KoLmafia-Guide/Support/Passive Damage.ash"
+import "relay/KoLmafia-Guide/Support/Item Filter.ash"
 
 
 Record TFWMInternalModifier

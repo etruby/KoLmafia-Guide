@@ -1,5 +1,5 @@
-import "relay/Guide/Support/HTML.ash"
-import "relay/Guide/Settings.ash"
+import "relay/KoLmafia-Guide/Support/HTML.ash"
+import "relay/KoLmafia-Guide/Settings.ash"
 
 record CSSEntry
 {

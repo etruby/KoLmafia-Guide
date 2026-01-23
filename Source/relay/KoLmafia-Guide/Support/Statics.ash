@@ -1,5 +1,5 @@
-import "relay/Guide/Support/List.ash";
-import "relay/Guide/Support/Ingredients.ash"
+import "relay/KoLmafia-Guide/Support/List.ash";
+import "relay/KoLmafia-Guide/Support/Ingredients.ash"
 
 
 

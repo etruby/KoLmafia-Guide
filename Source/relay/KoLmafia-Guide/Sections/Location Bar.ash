@@ -1,4 +1,4 @@
-import "relay/Guide/Sections/Location Bar Popup.ash";
+import "relay/KoLmafia-Guide/Sections/Location Bar Popup.ash";
 
 buffer generateLocationBar(boolean displaying_navbar)
 {

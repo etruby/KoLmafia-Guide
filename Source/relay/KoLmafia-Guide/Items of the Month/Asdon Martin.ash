@@ -1,6 +1,6 @@
 
-import "relay/Guide/Support/Library 2.ash"
-import "relay/Guide/Support/Ingredients.ash"
+import "relay/KoLmafia-Guide/Support/Library 2.ash"
+import "relay/KoLmafia-Guide/Support/Ingredients.ash"
 
 RegisterTaskGenerationFunction("IOTMAsdonMartinGenerateTasks");
 void IOTMAsdonMartinGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [int] optional_task_entries, ChecklistEntry [int] future_task_entries)

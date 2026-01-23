@@ -1,9 +1,9 @@
-import "relay/Guide/Support/HTML.ash"
-import "relay/Guide/Support/KOLImage.ash"
-import "relay/Guide/Support/List.ash"
-import "relay/Guide/Support/Page.ash"
-import "relay/Guide/Support/Library.ash"
-import "relay/Guide/Settings.ash"
+import "relay/KoLmafia-Guide/Support/HTML.ash"
+import "relay/KoLmafia-Guide/Support/KOLImage.ash"
+import "relay/KoLmafia-Guide/Support/List.ash"
+import "relay/KoLmafia-Guide/Support/Page.ash"
+import "relay/KoLmafia-Guide/Support/Library.ash"
+import "relay/KoLmafia-Guide/Settings.ash"
 
 //Standard checklist names:
 string C_REQUIRED_ITEMS = "Required Items";

@@ -1,8 +1,8 @@
-import "relay/Guide/Support/Checklist.ash"
-import "relay/Guide/Support/Library.ash"
-import "relay/Guide/Plants.ash"
-import "relay/Guide/Support/HTML.ash"
-import "relay/Guide/Sets.ash"
+import "relay/KoLmafia-Guide/Support/Checklist.ash"
+import "relay/KoLmafia-Guide/Support/Library.ash"
+import "relay/KoLmafia-Guide/Plants.ash"
+import "relay/KoLmafia-Guide/Support/HTML.ash"
+import "relay/KoLmafia-Guide/Sets.ash"
 
 void generateTasks(Checklist [int] checklists)
 {

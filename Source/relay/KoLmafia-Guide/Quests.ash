@@ -1,6 +1,6 @@
-import "relay/Guide/Support/Checklist.ash"
-import "relay/Guide/Support/LocationAvailable.ash"
-import "relay/Guide/Quests/Quest import.ash"
+import "relay/KoLmafia-Guide/Support/Checklist.ash"
+import "relay/KoLmafia-Guide/Support/LocationAvailable.ash"
+import "relay/KoLmafia-Guide/Quests/Quest import.ash"
 
 
 void QuestsInit()

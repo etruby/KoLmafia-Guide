@@ -6,7 +6,7 @@ This implementation is not 1:1 compatible, as it doesn't take into account your 
 
 //Relevant prototype:
 //int [item] get_ingredients_fast(item it)
-import "relay/Guide/Support/Strings.ash";
+import "relay/KoLmafia-Guide/Support/Strings.ash";
 
 Record Recipe
 {

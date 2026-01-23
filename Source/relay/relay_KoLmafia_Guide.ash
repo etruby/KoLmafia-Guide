@@ -1,7 +1,7 @@
 //This script and its support scripts are in the public domain.
 
 since 20.6;
-import "relay/Guide/Main.ash"
+import "relay/KoLmafia-Guide/Main.ash"
 
 void main()
 {

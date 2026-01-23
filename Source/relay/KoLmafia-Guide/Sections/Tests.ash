@@ -1,4 +1,4 @@
-import "relay/Guide/Support/Banishers.ash";
+import "relay/KoLmafia-Guide/Support/Banishers.ash";
 
 void generateImageTest(Checklist [int] checklists)
 {

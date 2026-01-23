@@ -1,5 +1,5 @@
-import "relay/Guide/Support/Math.ash"
-import "relay/Guide/Support/List.ash"
+import "relay/KoLmafia-Guide/Support/Math.ash"
+import "relay/KoLmafia-Guide/Support/List.ash"
 
 buffer to_buffer(string str)
 {

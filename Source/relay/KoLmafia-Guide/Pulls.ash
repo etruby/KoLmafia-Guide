@@ -1,5 +1,5 @@
-import "relay/Guide/QuestState.ash"
-import "relay/Guide/Support/Checklist.ash"
+import "relay/KoLmafia-Guide/QuestState.ash"
+import "relay/KoLmafia-Guide/Support/Checklist.ash"
 
 boolean [item] __pulls_reasonable_to_buy_in_run;
 

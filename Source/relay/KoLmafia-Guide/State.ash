@@ -1,8 +1,8 @@
-import "relay/Guide/QuestState.ash"
-import "relay/Guide/Quests.ash"
-import "relay/Guide/Sets.ash"
-import "relay/Guide/Pulls.ash"
-import "relay/Guide/Plants.ash"
+import "relay/KoLmafia-Guide/QuestState.ash"
+import "relay/KoLmafia-Guide/Quests.ash"
+import "relay/KoLmafia-Guide/Sets.ash"
+import "relay/KoLmafia-Guide/Pulls.ash"
+import "relay/KoLmafia-Guide/Plants.ash"
 
 void setUpExampleState()
 {

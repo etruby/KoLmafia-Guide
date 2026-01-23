@@ -1,7 +1,7 @@
-import "relay/Guide/Support/List.ash"
-import "relay/Guide/Support/Math.ash"
-import "relay/Guide/Support/Library.ash"
-import "relay/Guide/Support/AdventurePHP Locations.ash"
+import "relay/KoLmafia-Guide/Support/List.ash"
+import "relay/KoLmafia-Guide/Support/Math.ash"
+import "relay/KoLmafia-Guide/Support/Library.ash"
+import "relay/KoLmafia-Guide/Support/AdventurePHP Locations.ash"
 
 Record Counter
 {

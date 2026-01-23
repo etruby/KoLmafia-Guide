@@ -1,9 +1,9 @@
-import "relay/Guide/Support/LocationAvailable.ash"
-import "relay/Guide/Support/Equipment Requirement.ash"
-import "relay/Guide/Support/HTML.ash"
-import "relay/Guide/Support/Statics 2.ash"
-import "relay/Guide/Support/Ingredients.ash"
-import "relay/Guide/Support/Counter.ash"
+import "relay/KoLmafia-Guide/Support/LocationAvailable.ash"
+import "relay/KoLmafia-Guide/Support/Equipment Requirement.ash"
+import "relay/KoLmafia-Guide/Support/HTML.ash"
+import "relay/KoLmafia-Guide/Support/Statics 2.ash"
+import "relay/KoLmafia-Guide/Support/Ingredients.ash"
+import "relay/KoLmafia-Guide/Support/Counter.ash"
 
 
 

@@ -1,5 +1,5 @@
-import "relay/Guide/Sections/Tests.ash"
-import "relay/Guide/Limit Mode/Batfellow.ash";
+import "relay/KoLmafia-Guide/Sections/Tests.ash"
+import "relay/KoLmafia-Guide/Limit Mode/Batfellow.ash";
 
 void generateMisc(Checklist [int] checklists)
 {

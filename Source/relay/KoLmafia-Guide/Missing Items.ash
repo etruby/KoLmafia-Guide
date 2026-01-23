@@ -1,6 +1,6 @@
-import "relay/Guide/Support/Checklist.ash";
-import "relay/Guide/QuestState.ash";
-import "relay/Guide/Sets.ash";
+import "relay/KoLmafia-Guide/Support/Checklist.ash";
+import "relay/KoLmafia-Guide/QuestState.ash";
+import "relay/KoLmafia-Guide/Sets.ash";
 
 RegisterGenerationFunction("MissingItemsGenerate");
 //void generateMissingItems(Checklist [int] checklists)

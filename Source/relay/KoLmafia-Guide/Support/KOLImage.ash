@@ -1,8 +1,8 @@
-import "relay/Guide/Support/Math.ash"
-import "relay/Guide/Support/HTML.ash"
-import "relay/Guide/Support/Library.ash"
-import "relay/Guide/Support/Page.ash"
-import "relay/Guide/Support/KOLImageData.ash"
+import "relay/KoLmafia-Guide/Support/Math.ash"
+import "relay/KoLmafia-Guide/Support/HTML.ash"
+import "relay/KoLmafia-Guide/Support/Library.ash"
+import "relay/KoLmafia-Guide/Support/Page.ash"
+import "relay/KoLmafia-Guide/Support/KOLImageData.ash"
 
 boolean __setting_show_alignment_guides = false;
 //Library for displaying KOL images

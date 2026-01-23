@@ -1,4 +1,4 @@
-import "relay/Guide/Support/Location Choice.ash";
+import "relay/KoLmafia-Guide/Support/Location Choice.ash";
 
 void SemirareGenerateDescription(string [int] description)
 {

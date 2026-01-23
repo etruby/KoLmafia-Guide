@@ -1,6 +1,6 @@
 
-import "relay/Guide/Support/Checklist.ash";
-import "relay/Guide/Sets/Sets import.ash";
+import "relay/KoLmafia-Guide/Support/Checklist.ash";
+import "relay/KoLmafia-Guide/Sets/Sets import.ash";
 
 void SetsInit()
 {

@@ -1,5 +1,5 @@
 
-import "relay/Guide/Support/Library.ash"
+import "relay/KoLmafia-Guide/Support/Library.ash"
 
 //maybe rename this to ActiveBanish?
 Record Banish

@@ -1,5 +1,5 @@
-import "relay/Guide/Support/Counter.ash"
-import "relay/Guide/Support/Holiday.ash"
+import "relay/KoLmafia-Guide/Support/Counter.ash"
+import "relay/KoLmafia-Guide/Support/Holiday.ash"
 
 
                 

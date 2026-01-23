@@ -1,5 +1,5 @@
 
-import "relay/Guide/Items of the Month/Meteor Lore.ash";
+import "relay/KoLmafia-Guide/Items of the Month/Meteor Lore.ash";
 
 RegisterResourceGenerationFunction("IOTMPowerfulGloveGenerateResource");
 void IOTMPowerfulGloveGenerateResource(ChecklistEntry [int] resource_entries)

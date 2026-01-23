@@ -1,7 +1,7 @@
-import "relay/Guide/QuestState.ash"
-import "relay/Guide/Support/Checklist.ash"
-import "relay/Guide/Support/LocationAvailable.ash"
-import "relay/Guide/Sets/Sets import.ash"
+import "relay/KoLmafia-Guide/QuestState.ash"
+import "relay/KoLmafia-Guide/Support/Checklist.ash"
+import "relay/KoLmafia-Guide/Support/LocationAvailable.ash"
+import "relay/KoLmafia-Guide/Sets/Sets import.ash"
 
 
 

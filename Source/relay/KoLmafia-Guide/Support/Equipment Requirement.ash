@@ -1,4 +1,4 @@
-import "relay/Guide/Support/Library.ash";
+import "relay/KoLmafia-Guide/Support/Library.ash";
 
 Record EquipmentStatRequirement
 {
