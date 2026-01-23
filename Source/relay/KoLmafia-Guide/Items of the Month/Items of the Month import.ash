@@ -69,6 +69,7 @@ import "relay/KoLmafia-Guide/Items of the Month/Retro Superhero Cape.ash";
 import "relay/KoLmafia-Guide/Items of the Month/Spinmaster Lathe.ash";
 import "relay/KoLmafia-Guide/Items of the Month/Cargo Cultist Shorts.ash";
 import "relay/KoLmafia-Guide/Items of the Month/Potted Power Plant.ash";
-import "relay/KoLmafia-Guide/Items of the Month/Backup Camera.ash"
+import "relay/KoLmafia-Guide/Items of the Month/Backup Camera.ash";
+import "relay/KoLmafia-Guide/Items of the Month/Legendary Seal-Clubbing Club.ash";
 
 import "relay/KoLmafia-Guide/Items of the Month/Mayam Calendar.ash";
