@@ -263,9 +263,9 @@ void SMiscItemsGenerateResource(ChecklistEntry [int] resource_entries)
 
 	if ($item[BitterSweetTarts].available_amount() > 0 && __misc_state["need to level"])
 	{
-		int modifier = min(11, my_level());
+		int mod = min(11, my_level());
 		string [int] description;
-		description.listAppend("+" + modifier + " stats/fight, 10 turns");
+		description.listAppend("+" + mod + " stats/fight, 10 turns");
 		if (my_level() < 11)
 		{
 			description.listAppend("Wait until level 11 for full effectiveness");
@@ -274,9 +274,9 @@ void SMiscItemsGenerateResource(ChecklistEntry [int] resource_entries)
 	}
 	if ($item[polka pop].available_amount() > 0 && in_run)
 	{
-		int modifier = 5 * min(11, my_level());
+		int mod = 5 * min(11, my_level());
 		string [int] description;
-        description.listAppend("+" + modifier + "% item, " + "+" + modifier + "% meat");
+        description.listAppend("+" + mod + "% item, " + "+" + mod + "% meat");
 		if (my_level() < 11)
 		{
 			description.listAppend("Wait until level 11 for full effectiveness");

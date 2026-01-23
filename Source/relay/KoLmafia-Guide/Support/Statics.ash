@@ -67,7 +67,7 @@ int my_path_id_legacy()
     return my_path_id();
 }
 
-float numeric_modifier_replacement(item it, string modifier)
+float numeric_modifier_replacement(item it, string mod)
 {
     string modifier_lowercase = modifier.to_lower_case();
     float additional = 0;
@@ -111,7 +111,7 @@ float numeric_modifier_replacement(item it, string modifier)
         else if (modifier_lowercase == "initiative" && camera_mode == "init")
         	return 100;
     }
-    return numeric_modifier(it, modifier) + additional;
+    return numeric_modifier(it, mod) + additional;
 }
 
 
@@ -210,9 +210,9 @@ static
     initialiseItems();
 }
 
-boolean [item] equipmentWithNumericModifier(string modifier)
+boolean [item] equipmentWithNumericModifier(string mod)
 {
-	modifier = modifier.to_lower_case();
+	mod = mod.to_lower_case();
 	//dynamic items here
     boolean [item] dynamic_items;
     dynamic_items[to_item("backup camera")] = true;
@@ -220,7 +220,7 @@ boolean [item] equipmentWithNumericModifier(string modifier)
     dynamic_items[$item[kremlin's greatest briefcase]] = true;
     dynamic_items[$item[your cowboy boots]] = true;
     dynamic_items[$item[a light that never goes out]] = true; //FIXME all smithsness items
-    if (!(__equipment_by_numeric_modifier contains modifier))
+    if (!(__equipment_by_numeric_modifier contains mod))
     {
         //Build it:
         boolean [item] blank;

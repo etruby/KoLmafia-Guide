@@ -32,20 +32,19 @@ static
 }
 
 
-void ItemFilterInitialisePotionsForModifier(string modifier)
+void ItemFilterInitialisePotionsForModifier(string mod)
 {
-    if (__if_potions_with_numeric_modifiers contains modifier)
+    if (__if_potions_with_numeric_modifiers contains mod)
         return;
-    __if_potions_with_numeric_modifiers[modifier] = listMakeBlankItem();
-
+    __if_potions_with_numeric_modifiers[mod] = listMakeBlankItem();
     foreach it in $items[]
     {
         if (it.inebriety > 0 || it.fullness > 0 || it.spleen > 0) continue;
         effect e = it.to_effect();
         if (e == $effect[none]) continue;
-        if (e.numeric_modifier(modifier) != 0.0)
+        if (e.numeric_modifier(mod) != 0.0)
         {
-            __if_potions_with_numeric_modifiers[modifier].listAppend(it);
+            __if_potions_with_numeric_modifiers[mod].listAppend(it);
         }
     }
 }
@@ -55,10 +54,10 @@ item [int] ItemFilterGetPotionsWithNumericModifiers(string [int] modifiers)
 {
     item [int] potions;
     boolean [item] seen_potions;
-    foreach key, modifier in modifiers
+    foreach key, mod in modifiers
     {
         item [int] first_layer_list;
-        if (!(__if_potions_with_numeric_modifiers contains modifier))
+        if (!(__if_potions_with_numeric_modifiers contains mod))
             ItemFilterInitialisePotionsForModifier(modifier);
         
         first_layer_list = __if_potions_with_numeric_modifiers[modifier];
@@ -92,8 +91,8 @@ item [int] ItemFilterGetPotionsCouldPullToAddToNumericModifier(string [int] modi
         if (e.have_effect() > 0) continue;
         if (!e.effect_is_usable()) continue;
         float v = 0;
-        foreach key, modifier in modifiers
-            v += e.numeric_modifier(modifier);
+        foreach key, mod in modifiers
+            v += e.numeric_modifier(mod);
         if (v != 0.0 && v >= minimum_modifier && !(blocklist contains it))
         {
             relevant_potions.listAppend(it);

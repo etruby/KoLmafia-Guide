@@ -8,7 +8,7 @@ string [int] convertMafiaModifierStringToOurStyle(string modifier_string)
         if (line.count() == 2)
         {
             string value = line[1];
-            string modifier = line[0].to_lower_case();
+            string mod = line[0].to_lower_case();
             
             string [string] short_name_for_modifiers = {
             "muscle percent":"muscle",
@@ -21,13 +21,13 @@ string [int] convertMafiaModifierStringToOurStyle(string modifier_string)
             "combat rate":"combat",
             };
             
-            if (modifier == "muscle percent" || modifier == "mysticality percent" || modifier == "moxie percent" || modifier == "item drop" || modifier == "food drop" || modifier == "combat rate")
+            if (mod == "muscle percent" || mod == "mysticality percent" || mod == "moxie percent" || mod == "item drop" || mod == "food drop" || mod == "combat rate")
             {
                 value += "%";
             }
-            if (short_name_for_modifiers contains modifier)
-                modifier = short_name_for_modifiers[modifier];
-            modifiers.listAppend(value + " " + modifier);
+            if (short_name_for_modifiers contains mod)
+                mod = short_name_for_modifiers[mod];
+            modifiers.listAppend(value + " " + mod);
         }
         else
             modifiers.listAppend(s);

@@ -247,32 +247,32 @@ boolean generateTowerFamiliarWeightMethod(string [int] how, string [int] immedia
     TFWMInternalModifier best_familiar_equipment;
     foreach key in weight_modifiers
     {
-        TFWMInternalModifier modifier = weight_modifiers[key];
-        if (modifier.have && modifier.from_familiar_equipment)
+        TFWMInternalModifier mod = weight_modifiers[key];
+        if (mod.have && mod.from_familiar_equipment)
         {
             if (modifier.bonus > best_familiar_equipment.bonus)
-                best_familiar_equipment = modifier;
+                best_familiar_equipment = mod;
         }
     }
     
     float total = 0.0;
     foreach key in weight_modifiers
     {
-        TFWMInternalModifier modifier = weight_modifiers[key];
-        string description = modifier.description;
-        description += " (+" + modifier.bonus.floor() + ")";
-        if (modifier.have)
+        TFWMInternalModifier mod = weight_modifiers[key];
+        string description = mod.description;
+        description += " (+" + mod.bonus.floor() + ")";
+        if (mod.have)
         {
-            if (best_familiar_equipment.have && modifier.from_familiar_equipment && !TFWMInternalModifierEquals(best_familiar_equipment, modifier)) //not our chosen familiar equipment
+            if (best_familiar_equipment.have && mod.from_familiar_equipment && !TFWMInternalModifierEquals(best_familiar_equipment, mod)) //not our chosen familiar equipment
                 continue;
             how.listAppend(description);
             total += modifier.bonus;
         }
-        else if (modifier.obtainable_now)
+        else if (mod.obtainable_now)
         {
             immediately_obtainable.listAppend(description);
         }
-        else if (modifier.obtainable_theoretically)
+        else if (mod.obtainable_theoretically)
         {
             missing_potentials.listAppend(description);
         }

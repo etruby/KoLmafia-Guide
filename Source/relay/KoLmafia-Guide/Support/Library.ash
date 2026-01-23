@@ -880,15 +880,15 @@ float initiative_modifier_ignoring_plants()
 
 float item_drop_modifier_ignoring_plants()
 {
-    float modifier = item_drop_modifier();
+    float mod = item_drop_modifier();
     
     location my_location = my_location();
     if (my_location != $location[none])
     {
         if (my_location.locationHasPlant("Rutabeggar") || my_location.locationHasPlant("Stealing Magnolia"))
-            modifier -= 25.0;
+            mod -= 25.0;
         if (my_location.locationHasPlant("Kelptomaniac"))
-            modifier -= 40.0;
+            mod -= 40.0;
     }
     return modifier;
 }

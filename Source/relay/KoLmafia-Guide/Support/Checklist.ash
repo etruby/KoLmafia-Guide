@@ -353,9 +353,9 @@ string ChecklistGenerateModifierSpan(string [int] modifiers)
 	return HTMLGenerateSpanOfClass(modifiers.listJoinComponents(", "), "r_cl_modifier");
 }
 
-string ChecklistGenerateModifierSpan(string modifier)
+string ChecklistGenerateModifierSpan(string mod)
 {
-	return HTMLGenerateSpanOfClass(modifier, "r_cl_modifier");
+	return HTMLGenerateSpanOfClass(mod, "r_cl_modifier");
 }
 
 
