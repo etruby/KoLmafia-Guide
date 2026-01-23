@@ -6018,7 +6018,7 @@ boolean locationAvailablePrivateCheck(location loc, Error able_to_find)
     if (zone == "The Prince's Ball")
         return get_property("grimstoneMaskPath").to_lower_case() == "stepmother" && get_property_int("cinderellaMinutesToMidnight") > 0;
     
-    if (loc == $location[hippy camp])
+    if (loc == $location[The Hippy Camp])
     {
     	//FIXME we don't know who won the war, do we? so only give information if the war hasn't started 
     	if (get_property_ascension("lastIslandUnlock"))
@@ -26756,7 +26756,7 @@ void SSkillsGenerateResource(ChecklistEntry [int] resource_entries)
     property_summons_to_skills["_grimoireConfiscatorSummons"] = listMake($skill[Summon Confiscated Things]);
     skills_to_urls[$skill[Summon Confiscated Things]] = "campground.php?action=bookshelf";
     property_summons_to_skills["_candySummons"] = listMake($skill[Summon Crimbo Candy]);
-    property_summons_to_skills["_summonResortPassUsed"] = listMake($skill[Summon Kokomo Resort Pass]);
+    property_summons_to_skills["_summonResortPassesUsed"] = listMake($skill[Summon Kokomo Resort Pass]);
     property_summons_to_skills["_incredibleSelfEsteemCast"] = listMake($skill[Incredible Self-Esteem]);
     skills_to_details[$skill[Incredible Self-Esteem]] = "Gives or extends affirmation buffs.";
     if (__misc_state["in run"] && $item[Daily Affirmation: Always be Collecting].available_amount() > 0 && $item[Daily Affirmation: Always be Collecting].to_effect().have_effect() == 0)
@@ -32924,7 +32924,7 @@ void SPowerlevelGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry 
         else if (spooky_airport_unlocked)
             url = $location[the deep dark jungle].getClickableURLForLocation();
         else if ($item[GameInformPowerDailyPro walkthru].available_amount() > 0)
-            url = $location[video game level 1].getClickableURLForLocation();
+            url = $location[[DungeonFAQ - Level 1]].getClickableURLForLocation();
         else if (my_primestat() == $stat[muscle] && $location[the haunted billiards room].locationAvailable())
             url = $location[the haunted gallery].getClickableURLForLocation();
         else if (my_primestat() == $stat[mysticality] && $location[the haunted bedroom].locationAvailable())
@@ -33546,7 +33546,7 @@ void SMiscTasksGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [
         if ($familiar[slimeling].familiar_is_usable())
             modifiers.listAppend("slimeling?");
             
-        ChecklistEntry entry = ChecklistEntryMake(394, "__item filthy knitted dread sack", "island.php", ChecklistSubentryMake("Acquire a filthy hippy disguise", modifiers, description), $locations[hippy camp]);
+        ChecklistEntry entry = ChecklistEntryMake(394, "__item filthy knitted dread sack", "island.php", ChecklistSubentryMake("Acquire a filthy hippy disguise", modifiers, description), $locations[The Hippy Camp]);
         if (should_be_future_task)
             future_task_entries.listAppend(entry);
         else
@@ -33571,7 +33571,7 @@ void SMiscTasksGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [
     }
     
     //I'm not sure if you ever need a frat boy ensemble in-run, even if you're doing the hippy side on the war? If you need war hippy fatigues, the faster (?) way is acquire hippy outfit -> frat warrior fatigues -> start the war / use desert adventure for hippy fatigues. But if they're sure...
-	if (!have_outfit_components("Frat boy ensemble") && __misc_state["mysterious island available"] && __misc_state["in run"] && !__quest_state["Level 12"].finished && !__quest_state["Level 12"].started && $location[frat house].turnsAttemptedInLocation() >= 3 && ($location[frat house].combatTurnsAttemptedInLocation() > 0 || $location[frat house].noncombat_queue.contains_text("Sing This Explosion to Me") || $location[frat house].noncombat_queue.contains_text("Sing This Explosion to Me") || $location[frat house].noncombat_queue.contains_text("Murder by Death") || $location[frat house].noncombat_queue.contains_text("I Just Wanna Fly") || $location[frat house].noncombat_queue.contains_text("From Stoked to Smoked") || $location[frat house].noncombat_queue.contains_text("Purple Hazers")))
+	if (!have_outfit_components("Frat boy ensemble") && __misc_state["mysterious island available"] && __misc_state["in run"] && !__quest_state["Level 12"].finished && !__quest_state["Level 12"].started && $location[The Orcish Frat House].turnsAttemptedInLocation() >= 3 && ($location[The Orcish Frat House].combatTurnsAttemptedInLocation() > 0 || $location[The Orcish Frat House].noncombat_queue.contains_text("Sing This Explosion to Me") || $location[The Orcish Frat House].noncombat_queue.contains_text("Sing This Explosion to Me") || $location[The Orcish Frat House].noncombat_queue.contains_text("Murder by Death") || $location[The Orcish Frat House].noncombat_queue.contains_text("I Just Wanna Fly") || $location[The Orcish Frat House].noncombat_queue.contains_text("From Stoked to Smoked") || $location[The Orcish Frat House].noncombat_queue.contains_text("Purple Hazers")))
     {
         //they don't have a frat boy ensemble, but they adventured in the pre-war frat house
         //I'm assuming this means they want the outfit, for whatever reason. So, suggest it, until the level 12 starts:
@@ -33587,7 +33587,7 @@ void SMiscTasksGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [
         }
         else
             description.listAppend("Possibly wait until level 9, to unlock NCs in the area.");
-		optional_task_entries.listAppend(ChecklistEntryMake(396, "__item orcish frat-paddle", "island.php", ChecklistSubentryMake("Acquire a frat boy ensemble?", modifiers, description), $locations[frat house]));
+		optional_task_entries.listAppend(ChecklistEntryMake(396, "__item orcish frat-paddle", "island.php", ChecklistSubentryMake("Acquire a frat boy ensemble?", modifiers, description), $locations[The Orcish Frat House]));
     }
 		
 	if ($item[strange leaflet].available_amount() > 0 && __misc_state["in run"])
@@ -42207,7 +42207,7 @@ buffer generateLocationBar(boolean displaying_navbar)
             location_data.listAppend(average_coins_gained.roundForOutput(1) + " ka");
     }
     
-    boolean [location] powerleveling_locations = $locations[hamburglaris shield generator,video game level 1,video game level 2,video game level 3];
+    boolean [location] powerleveling_locations = $locations[hamburglaris shield generator,[DungeonFAQ - Level 1],[DungeonFAQ - Level 2],[DungeonFAQ - Level 3]];
     
     if (sample_count > 0 && (__misc_state["in run"] || powerleveling_locations contains l || average_ml > my_buffedstat($stat[moxie])))
     {
@@ -52600,7 +52600,7 @@ void PathActuallyEdtheUndyingGenerateResource(ChecklistEntry [int] resource_entr
         if (__misc_state["mysterious island available"] && !__quest_state["Level 12"].in_progress && my_level() < 9) //we test if we're under level 9 and the level 12 quest isn't in progress. maybe they ate a lot of hot dogs. it could happen!
         {
             places_to_farm_ka.listAppend("hippy camp");
-            if (url.length() == 0) url = $location[hippy camp].getClickableURLForLocation();
+            if (url.length() == 0) url = $location[The Hippy Camp].getClickableURLForLocation();
         }
         if (!__misc_state["mysterious island available"] && my_basestat($stat[mysticality]) < 40)
         {
@@ -55146,7 +55146,7 @@ void PathGelatinousNoobGenerateTasks(ChecklistEntry [int] task_entries, Checklis
         if (!$skill[ink gland].have_skill() && $item[shot of granola liqueur].available_amount() == 0)
         {
             phylums_to_run_against.listAppend($phylum[hippy]);
-            suggested_locations.listAppend($location[hippy camp]);
+            suggested_locations.listAppend($location[The Hippy Camp]);
             matchup_type.listAppend("-");
             have_minus = true;
         }
@@ -55167,7 +55167,7 @@ void PathGelatinousNoobGenerateTasks(ChecklistEntry [int] task_entries, Checklis
         if (!$skill[powerful vocal chords].have_skill() && $item[baby oil shooter].available_amount() == 0)
         {
             phylums_to_run_against.listAppend($phylum[orc]);
-            suggested_locations.listAppend($location[frat house]);
+            suggested_locations.listAppend($location[The Orcish Frat House]);
             matchup_type.listAppend("+");
             have_plus = true;
         }

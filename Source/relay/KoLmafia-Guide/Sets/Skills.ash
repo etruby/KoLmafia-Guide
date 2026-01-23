@@ -142,7 +142,7 @@ void SSkillsGenerateResource(ChecklistEntry [int] resource_entries)
     property_summons_to_skills["_grimoireConfiscatorSummons"] = listMake($skill[Summon Confiscated Things]);
     skills_to_urls[$skill[Summon Confiscated Things]] = "campground.php?action=bookshelf";
     property_summons_to_skills["_candySummons"] = listMake($skill[Summon Crimbo Candy]);
-    property_summons_to_skills["_summonResortPassUsed"] = listMake($skill[Summon Kokomo Resort Pass]);
+    property_summons_to_skills["_summonResortPassesUsed"] = listMake($skill[Summon Kokomo Resort Pass]);
     property_summons_to_skills["_incredibleSelfEsteemCast"] = listMake($skill[Incredible Self-Esteem]);
     skills_to_details[$skill[Incredible Self-Esteem]] = "Gives or extends affirmation buffs.";
     if (__misc_state["in run"] && $item[Daily Affirmation: Always be Collecting].available_amount() > 0 && $item[Daily Affirmation: Always be Collecting].to_effect().have_effect() == 0)

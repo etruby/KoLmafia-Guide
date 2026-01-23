@@ -342,7 +342,7 @@ boolean locationAvailablePrivateCheck(location loc, Error able_to_find)
     if (zone == "The Prince's Ball")
         return get_property("grimstoneMaskPath").to_lower_case() == "stepmother" && get_property_int("cinderellaMinutesToMidnight") > 0;
     
-    if (loc == $location[hippy camp])
+    if (loc == $location[The Hippy Camp])
     {
     	//FIXME we don't know who won the war, do we? so only give information if the war hasn't started 
     	if (get_property_ascension("lastIslandUnlock"))
