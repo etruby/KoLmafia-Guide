@@ -1728,7 +1728,7 @@ boolean locationNextNCWillBeCartography(location l)
     {
         relevant_nc_names = $strings[Mob Maptality,Bench Warrant,Fire Up Above,This Looks Like a Good Bush for an Ambush];
     }
-    else if (l == $location[Frat House]) //not 100%. FIXME correct zone?
+    else if (l == $location[The Orcish Frat House]) //not 100%. FIXME correct zone?
     {
         relevant_nc_names = $strings[Oh Yeah!,Purple Hazers,From Stoked to Smoked,Murder by Death,Sing This Explosion to Me]; //is this correct...?
     }

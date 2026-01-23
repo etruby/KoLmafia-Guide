@@ -4408,7 +4408,7 @@ boolean locationNextNCWillBeCartography(location l)
     {
         relevant_nc_names = $strings[Mob Maptality,Bench Warrant,Fire Up Above,This Looks Like a Good Bush for an Ambush];
     }
-    else if (l == $location[Frat House]) //not 100%. FIXME correct zone?
+    else if (l == $location[The Orcish Frat House]) //not 100%. FIXME correct zone?
     {
         relevant_nc_names = $strings[Oh Yeah!,Purple Hazers,From Stoked to Smoked,Murder by Death,Sing This Explosion to Me]; //is this correct...?
     }
@@ -4495,8 +4495,8 @@ void initialiseIOTMsUsable()
             if (campground contains it)
                 __iotms_usable[it] = true;
         }
-        if (campground contains $item[Asdon Martin keyfob (on ring)])
-            __iotms_usable[$item[Asdon Martin keyfob (on ring)]] = true;
+        if (campground contains $item[Asdon Martin keyfob (on ring) (on ring)])
+            __iotms_usable[$item[Asdon Martin keyfob (on ring) (on ring)]] = true;
     }
     if (get_property_boolean("hasDetectiveSchool"))
         __iotms_usable[$item[detective school application]] = true;
@@ -32020,7 +32020,7 @@ void SPVPGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [int] o
             else if ($item[Spanish fly trap].available_amount() == 0)
             {
             	modifiers.listAppend("-combat");
-                if ($location[Frat House].noncombat_queue.contains_text("I Just Wanna Fly") || $location[The Orcish Frat House (Bombed Back to the Stone Age)].noncombat_queue.contains_text("Me Just Want Fly"))
+                if ($location[The Orcish Frat House].noncombat_queue.contains_text("I Just Wanna Fly") || $location[The Orcish Frat House (Bombed Back to the Stone Age)].noncombat_queue.contains_text("Me Just Want Fly"))
                 {
                     description.listAppend("Run -combat in The Obligatory Pirate's Cove, acquire Spanish fly trap.");
                 }
@@ -35749,7 +35749,7 @@ void setUpState()
             minus_combat_source_count += 5 * 4;
         if (my_path().id == PATH_AVATAR_OF_JARLSBERG && $skill[chocolatesphere].skill_is_usable())
             minus_combat_source_count += 5 * 3;
-        if (__iotms_usable[$item[Asdon Martin keyfob (on ring)]])
+        if (__iotms_usable[$item[Asdon Martin keyfob (on ring) (on ring)]])
             minus_combat_source_count += 10;
         if (my_path().id == PATH_AVATAR_OF_SNEAKY_PETE)
         {
@@ -39876,7 +39876,7 @@ static
         __static_bad_moon_adventures.listAppend(BadMoonAdventureMake(4, $location[Cobb's Knob Treasury], "STAT2", "+40 muscle, -50% familiar weight", "", false));
         __static_bad_moon_adventures.listAppend(BadMoonAdventureMake(5, $location[Cobb's Knob Kitchens], "STAT2", "+40 myst, -50% familiar weight", "", false));
         __static_bad_moon_adventures.listAppend(BadMoonAdventureMake(6, $location[Cobb's Knob Harem], "STAT2", "+40 moxie, -50% familiar weight", "", false));
-        __static_bad_moon_adventures.listAppend(BadMoonAdventureMake(7, $location[Frat House], "STAT3", "+50% muscle, -50% myst", "", false));
+        __static_bad_moon_adventures.listAppend(BadMoonAdventureMake(7, $location[The Orcish Frat House], "STAT3", "+50% muscle, -50% myst", "", false));
         __static_bad_moon_adventures.listAppend(BadMoonAdventureMake(8, lookupLocation("Frat House (Frat Disguise)"), "STAT3", "+50% muscle, -50% moxie", "", false));
         __static_bad_moon_adventures.listAppend(BadMoonAdventureMake(9, $location[Hippy Camp], "STAT3", "+50% myst, -50% moxie", "", false));
         __static_bad_moon_adventures.listAppend(BadMoonAdventureMake(10, lookupLocation("Hippy Camp (Hippy Disguise)"), "STAT3", "+50% myst, -50% muscle", "", false));
@@ -54445,7 +54445,7 @@ void PathWOTSFGenerateResource(ChecklistEntry [int] resource_entries)
 	teaching_properties_to_locations["fistTeachingsBarroomBrawl"] = $location[A Barroom Brawl];
 	teaching_properties_to_locations["fistTeachingsBatHole"] = $location[The Bat Hole Entrance];
 	teaching_properties_to_locations["fistTeachingsConservatory"] = $location[The Haunted Conservatory];
-	teaching_properties_to_locations["fistTeachingsFratHouse"] = $location[Frat House];
+	teaching_properties_to_locations["fistTeachingsFratHouse"] = $location[The Orcish Frat House];
 	teaching_properties_to_locations["fistTeachingsFunHouse"] = $location[The "Fun" House];
 	teaching_properties_to_locations["fistTeachingsHaikuDungeon"] = $location[The Haiku Dungeon];
 	teaching_properties_to_locations["fistTeachingsMenagerie"] = $location[Cobb's Knob Menagerie\, Level 2];
