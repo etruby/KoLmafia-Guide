@@ -6,7 +6,7 @@ How do I use it?
 First, install it by running this command in KoLmafia's graphical CLI:
 
 <pre>
-git checkout https://github.com/Ezandora/Guide.git
+git checkout https://github.com/etruby/KoLmafia-Guide.git
 </pre>
 
 Once it's installed, look in the relay browser. In the upper-right, there will be a "-run script-" menu:
