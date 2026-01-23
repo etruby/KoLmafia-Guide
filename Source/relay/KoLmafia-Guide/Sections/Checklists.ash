@@ -292,7 +292,7 @@ void outputChecklists(Checklist [int] ordered_output_checklists)
 	//if (my_path() != "" && my_path() != "None" && playerIsLoggedIn())
 	if (my_path_id_legacy() != 0)
 	{
-		PageWrite(HTMLGenerateDivOfClass(path_id_to_name(my_path_id_legacy()), "r_bold"));
+		PageWrite(HTMLGenerateDivOfClass(my_path().name, "r_bold"));
 	}
     
     
