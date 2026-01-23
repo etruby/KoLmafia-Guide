@@ -16,8 +16,8 @@ void initialiseIOTMsUsable()
             if (campground contains it)
                 __iotms_usable[it] = true;
         }
-        if (campground contains $item[Asdon Martin keyfob (on ring) (on ring)])
-            __iotms_usable[$item[Asdon Martin keyfob (on ring) (on ring)]] = true;
+        if (campground contains $item[Asdon Martin keyfob (on ring)])
+            __iotms_usable[$item[Asdon Martin keyfob (on ring)]] = true;
     }
     if (get_property_boolean("hasDetectiveSchool"))
         __iotms_usable[$item[detective school application]] = true;
