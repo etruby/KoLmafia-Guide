@@ -78,3 +78,5 @@ import "relay/KoLmafia-Guide/Items of the Month/Legendary Seal-Clubbing Club.ash
 import "relay/KoLmafia-Guide/Items of the Month/Eternity Codpiece.ash";
 
 import "relay/KoLmafia-Guide/Items of the Month/Skeleton of Crimbo Past.ash";
+
+import "relay/KoLmafia-Guide/Items of the Month/Shrunken Head.ash";

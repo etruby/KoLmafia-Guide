@@ -22,7 +22,7 @@
 
 ### 2025 (Working backward from December)
 1. ✅ **stocking full of bones** (December 2025) - IMPLEMENTED
-2. ❌ **shrunken head in a duffel bag** (November 2025)
+2. ✅ **shrunken head in a duffel bag** (November 2025) - IMPLEMENTED
 3. ❌ **lab-grown blood cubic zirconia** (October 2025)
 4. ❌ **packaged Monodent of the Sea** (September 2025)
 5. ❌ **Möbius ring box** (August 2025)
