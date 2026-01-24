@@ -595,7 +595,7 @@ void SMiscItemsGenerateResource(ChecklistEntry [int] resource_entries)
             line += ", cools down " + zap_wand_owned;
         line += ".";
         description.listAppend(line);
-        resource_entries.listAppend(ChecklistEntryMake(327, "__item Platinum Yendorian Express Card", "", ChecklistSubentryMake("Platinum Yendorian Express Card", "", description), importance_level_item));
+        resource_entries.listAppend(ChecklistEntryMake(327, "__item Platinum Yendorian Express Card", "inventory.php?which=3&ftext=Platinum+Yendorian+Express+Card", ChecklistSubentryMake("Platinum Yendorian Express Card", "", description), importance_level_item));
     }
     
     

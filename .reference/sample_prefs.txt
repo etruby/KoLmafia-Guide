@@ -1,0 +1,31 @@
+=true
+8BitBonusTurns=0
+8BitColor
+8BitScore=0
+CharSheetFrame=949,392,-1,518,581
+ClanManageFrame=659,223,4,602,604
+CoinmastersFrame=292,229,-1,694,543
+DescriptionFrame=971,497,-1,414,369
+EVEDirections=LLRLR0
+FamiliarTrainingFrame=276,78,728,614
+GearChangeFrame=177,191,-1,620,717
+KoLDesktop=82,94,0,826,705
+LoginFrame=545,175,0,446,466
+MallSearchFrame=872,550,585,484
+MaximizerFrame=266,198,683,603
+MeatManageFrame=719,250
+MuseumFrame=664,249,2,592,534
+OptionsFrame=809,428,-1,710,500
+ROMOfOptimalityAvailable=true
+ROMOfOptimalityCost=1000
+RequestFrame=7,55,-1,600,505
+RequestSynchFrame=652,256,-1,616,520
+SHAWARMAInitiativeUnlocked=false
+ScriptManageFrame=423,39,0,690,738
+SeasoningSwagger=0
+SynthesizeFrame=609,185,-1,738,668
+TabbedChatFrame=710,368,0
+TrophyFrame=597,0,-1,727,1092
+
+[Note: This is a sample preferences file from KoLmafia showing user state tracking.
+File saved for reference when implementing IOTM features that need to track state.]

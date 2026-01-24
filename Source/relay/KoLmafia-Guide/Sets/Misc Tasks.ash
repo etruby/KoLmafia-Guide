@@ -242,7 +242,7 @@ void SMiscTasksGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [
                 reasons.listAppend("free rests");
             
             string description = "Better HP/MP restoration via " + reasons.listJoinComponents(", ", "and") + ".";
-            optional_task_entries.listAppend(ChecklistEntryMake(399, "__item " + upgraded_dwelling, "inventory.php?which=3", ChecklistSubentryMake("Use " + upgraded_dwelling, "", description), 8));
+            optional_task_entries.listAppend(ChecklistEntryMake(399, "__item " + upgraded_dwelling, "inventory.php?which=3&ftext=" + upgraded_dwelling.name.url_encode(), ChecklistSubentryMake("Use " + upgraded_dwelling, "", description), 8));
             
         }
     }
