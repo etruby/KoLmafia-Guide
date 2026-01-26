@@ -204,13 +204,14 @@ void QLevel8GenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [int
         }
         //eXtreme outfit:
         string extreme_line;
+        boolean have_mchugerlarge_duffel_bag = $item[McHugeLarge duffel bag].available_amount() > 0;
         if (true)
         {
             string [int] extreme_path;
             string [int] extreme_modifiers;
-            
-            
-            
+
+
+
             item [int] items_needed = missing_outfit_components("eXtreme Cold-Weather Gear");
         
             if (items_needed.count() == 0)
@@ -236,6 +237,8 @@ void QLevel8GenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [int
                 if ($familiar[slimeling].familiar_is_usable())
                     extreme_modifiers.listAppend("slimeling?");
                 extreme_path.listAppend("Run -combat and maybe +item on the eXtreme slope.");
+                if (have_mchugerlarge_duffel_bag)
+                    extreme_path.listAppend("McHugeLarge duffel bag can be used instead of the eXtreme outfit.");
             }
         
             extreme_line = "Extreme path:";
