@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ruby:*)",
+      "Bash(cmd /c \"ruby \"\"Compile ASH script.rb\"\" \"\"Source/relay/relay_KoLmafia_Guide.ash\"\" \"\"Release/relay/relay_Guide.ash\"\"\")",
+      "Bash(powershell:*)"
+    ]
+  }
+}

@@ -25,6 +25,8 @@ ruby "Compile ASH script.rb" "Source/relay/relay_KoLmafia_Guide.ash" "Release/re
 
 The Ruby compilation script (`Compile ASH script.rb`) recursively processes all `import` statements, merging ~230 modular `.ash` files from `Source/` into a single distributable script in `Release/`.
 
+**Note:** The Ruby compilation step can be skipped during development. It only compresses the modular source files into a single script for deployment. KoLmafia can run the modular `Source/` version directly during testing.
+
 ### Directory Structure
 
 - **Source/relay/** - Development version (modular, ~230 files)
@@ -111,5 +113,9 @@ string __version = "2.0.7";
 When implementing new Items of the Month, these resources are helpful:
 
 - **[loathers.net](https://www.loathers.net/analysis/)** - Detailed IOTM analysis with mechanics, speedrun value, and synergies
-- **[KoL Wiki](https://wiki.kingdomofloathing.com/)** - Official wiki with item/skill details (may require searching for specific pages)
 - **[KoLmafia source code](https://github.com/kolmafia/kolmafia)** - Check `src/data/defaults.txt` for property names and tracking
+
+**Note on Wiki Access:**
+- **wiki.kingdomofloathing.com** - Returns 403 Forbidden for Claude requests
+- **kol.coldfront.net/thekolwiki** - Often unavailable (connection refused) and may be out of date
+- Use loathers.net analysis and KoLmafia source code as primary references

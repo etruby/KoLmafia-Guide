@@ -24,7 +24,7 @@
 1. ✅ **stocking full of bones** (December 2025) - IMPLEMENTED
 2. ✅ **shrunken head in a duffel bag** (November 2025) - IMPLEMENTED
 3. ✅ **lab-grown blood cubic zirconia** (October 2025) - IMPLEMENTED
-4. ❌ **packaged Monodent of the Sea** (September 2025)
+4. ✅ **packaged Monodent of the Sea** (September 2025) - IMPLEMENTED
 5. ❌ **Möbius ring box** (August 2025)
 6. ❌ **yeti in a travel cooler** (July 2025)
 7. ❌ **packaged prismatic beret** (June 2025)
