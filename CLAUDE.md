@@ -105,3 +105,11 @@ Update the version number in [Settings.ash](Source/relay/KoLmafia-Guide/Settings
 ```ash
 string __version = "2.0.7";
 ```
+
+## IOTM Research Resources
+
+When implementing new Items of the Month, these resources are helpful:
+
+- **[loathers.net](https://www.loathers.net/analysis/)** - Detailed IOTM analysis with mechanics, speedrun value, and synergies
+- **[KoL Wiki](https://wiki.kingdomofloathing.com/)** - Official wiki with item/skill details (may require searching for specific pages)
+- **[KoLmafia source code](https://github.com/kolmafia/kolmafia)** - Check `src/data/defaults.txt` for property names and tracking

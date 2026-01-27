@@ -23,7 +23,7 @@
 ### 2025 (Working backward from December)
 1. ✅ **stocking full of bones** (December 2025) - IMPLEMENTED
 2. ✅ **shrunken head in a duffel bag** (November 2025) - IMPLEMENTED
-3. ❌ **lab-grown blood cubic zirconia** (October 2025)
+3. ✅ **lab-grown blood cubic zirconia** (October 2025) - IMPLEMENTED
 4. ❌ **packaged Monodent of the Sea** (September 2025)
 5. ❌ **Möbius ring box** (August 2025)
 6. ❌ **yeti in a travel cooler** (July 2025)
@@ -32,7 +32,7 @@
 9. ❌ **Packaged April Shower Thoughts Calendar** (April 2025)
 10. ❌ **assemble-it-yourself Leprecondo** (March 2025)
 11. ❌ **new-in-box toy Cupid bow** (February 2025)
-12. ❌ **McHugeLarge deluxe ski set** (January 2025)
+12. ✅ **McHugeLarge deluxe ski set** (January 2025) - IMPLEMENTED
 
 ### 2024 (Working backward from December)
 1. ❌ **peace turkey outline / Sealed TakerSpace letter of Marque** (December 2024)
