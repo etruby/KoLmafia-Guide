@@ -3,7 +3,9 @@
     "allow": [
       "Bash(ruby:*)",
       "Bash(cmd /c \"ruby \"\"Compile ASH script.rb\"\" \"\"Source/relay/relay_KoLmafia_Guide.ash\"\" \"\"Release/relay/relay_Guide.ash\"\"\")",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(dir /s /b \"C:\\\\Users\\\\erikt\\\\Documents\\\\Git\\\\kolmafia\")",
+      "Bash(findstr:*)"
     ]
   }
 }
