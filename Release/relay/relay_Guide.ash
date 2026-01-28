@@ -34322,7 +34322,6 @@ void SetsGenerateResources(ChecklistEntry [int] resource_entries)
     SFaxGenerateResource(resource_entries);
     SClassesGenerateResource(resource_entries);
     SEquipmentGenerateResource(resource_entries);
-    S8bitRealmGenerateResource(resource_entries);
     SCalculateUniverseGenerateResource(resource_entries);
     SEventsGenerateResource(resource_entries);
 }

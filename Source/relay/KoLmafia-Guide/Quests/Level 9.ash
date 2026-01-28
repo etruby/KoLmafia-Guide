@@ -530,7 +530,15 @@ void QLevel9GenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [int
   
         //if (__misc_state["have olfaction equivalent"]) //don't remember what you'd olfact here
             //subentry.modifiers.listAppend("olfaction");
-		subentry.entries.listAppend("Build a bridge.");
+        if ("chasmBridgeProgress".get_property_int() >= 25)
+        {
+            if ($item[bat wings].available_amount() > 0 && $item[bat wings].equipped_amount() == 0)
+                subentry.entries.listAppend("equip " + $item[bat wings] + " and fly across the orc chasm.");
+            else
+                subentry.entries.listAppend("fly across the orc chasm.");
+        }
+        else
+    		subentry.entries.listAppend("Build a bridge.");
   
         string smut_orc_noncombat_progress_string = get_property("smutOrcNoncombatProgress");
         boolean orc_tracking_supported = false;
