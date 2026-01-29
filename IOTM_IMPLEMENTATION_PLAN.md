@@ -25,7 +25,7 @@
 2. ✅ **shrunken head in a duffel bag** (November 2025) - IMPLEMENTED
 3. ✅ **lab-grown blood cubic zirconia** (October 2025) - IMPLEMENTED
 4. ✅ **packaged Monodent of the Sea** (September 2025) - IMPLEMENTED
-5. ❌ **Möbius ring box** (August 2025)
+5. ✅ **Möbius ring box** (August 2025) - IMPLEMENTED
 6. ❌ **yeti in a travel cooler** (July 2025)
 7. ❌ **packaged prismatic beret** (June 2025)
 8. ❌ **Unpeeled Peridot of Peril** (May 2025)

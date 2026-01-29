@@ -5,7 +5,11 @@
       "Bash(cmd /c \"ruby \"\"Compile ASH script.rb\"\" \"\"Source/relay/relay_KoLmafia_Guide.ash\"\" \"\"Release/relay/relay_Guide.ash\"\"\")",
       "Bash(powershell:*)",
       "Bash(dir /s /b \"C:\\\\Users\\\\erikt\\\\Documents\\\\Git\\\\kolmafia\")",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "WebFetch(domain:wiki.kingdomofloathing.com)",
+      "WebFetch(domain:www.loathers.net)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:loathers.net)"
     ]
   }
 }
