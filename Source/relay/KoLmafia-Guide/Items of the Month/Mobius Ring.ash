@@ -42,7 +42,7 @@ int MobiusGetNCInterval(int encounters)
 RegisterResourceGenerationFunction("IOTMMobiusRingGenerateResource");
 void IOTMMobiusRingGenerateResource(ChecklistEntry [int] resource_entries)
 {
-	item mobius_ring = $item[Möbius ring];
+	item mobius_ring = $item[M&ouml;bius ring];
 
 	// Check if the Möbius ring is usable
 	if (!mobius_ring.is_unrestricted()) return;

@@ -30,7 +30,7 @@
 7. ❌ **packaged prismatic beret** (June 2025)
 8. ❌ **Unpeeled Peridot of Peril** (May 2025)
 9. ❌ **Packaged April Shower Thoughts Calendar** (April 2025)
-10. ❌ **assemble-it-yourself Leprecondo** (March 2025)
+10. ✅ **assemble-it-yourself Leprecondo** (March 2025) - IMPLEMENTED
 11. ❌ **new-in-box toy Cupid bow** (February 2025)
 12. ✅ **McHugeLarge deluxe ski set** (January 2025) - IMPLEMENTED
 

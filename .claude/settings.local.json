@@ -9,7 +9,8 @@
       "WebFetch(domain:wiki.kingdomofloathing.com)",
       "WebFetch(domain:www.loathers.net)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:loathers.net)"
+      "WebFetch(domain:loathers.net)",
+      "Bash(curl:*)"
     ]
   }
 }
