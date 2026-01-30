@@ -37,7 +37,7 @@
 ### 2024 (Working backward from December)
 1. ✅ **Sealed TakerSpace letter of Marque** (December 2024) - IMPLEMENTED
 2. ❌ **peace turkey outline** (November 2024)
-3. ❌ **boxed bat wings** (October 2024)
+3. ✅ **boxed bat wings** (October 2024) - IMPLEMENTED
 4. ❌ **boxed SeptEmber Censer** (September 2024)
 5. ❌ **untorn tearaway pants package** (August 2024)
 6. ❌ **packaged Roman Candelabra** (July 2024)

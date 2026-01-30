@@ -201,3 +201,31 @@ When implementing new Items of the Month, these resources are helpful:
 - **wiki.kingdomofloathing.com** - Returns 403 Forbidden for Claude requests, possibly use powershell workaround
 - **kol.coldfront.net/thekolwiki** - Often unavailable (connection refused) and may be out of date
 - Use loathers.net analysis and KoLmafia source code as primary references
+
+### Quest-Specific IOTMs
+
+Some IOTMs provide bonuses for specific quests rather than general daily resources. For these:
+
+1. **Check existing quest files first** - They may already reference the item (e.g., Level 9.ash already had bat wings bridge crossing logic)
+2. **Access quest state** via `__quest_state["Level X"]`:
+   - `.in_progress` - Boolean, quest is active
+   - `.mafia_internal_step` - Integer, quest progress step
+   - `.state_int["key"]` - Integer state values
+   - `.state_boolean["key"]` - Boolean state values
+3. **Check zone availability** with `$location[zone name].locationAvailable()`
+4. **Add task suggestions** that appear only when the relevant quest is active
+
+**[Bat Wings.ash](Source/relay/KoLmafia-Guide/Items of the Month/Bat Wings.ash)** is a good template for quest-specific IOTMs with:
+- Multiple quest checks (Level 4, 9, 10)
+- Conditional task generation based on quest progress
+- Equipment status checks
+
+---
+
+## Session End Checklist
+
+At the end of each coding session, complete these steps:
+
+1. **Update IOTM_IMPLEMENTATION_PLAN.md** - Mark completed items with ✅
+2. **Document learnings in CLAUDE.md** - Add any new patterns, gotchas, or useful techniques discovered
+3. **Note any incomplete work** - Update plan with next steps if work is unfinished
