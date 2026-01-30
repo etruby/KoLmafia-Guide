@@ -11,7 +11,7 @@ void initialiseIOTMsUsable()
     {
         int [item] campground = get_campground();
         //Campground items:
-        foreach it in $items[source terminal, haunted doghouse, Witchess Set, potted tea tree, portable mayo clinic, Little Geneticist DNA-Splicing Lab, cornucopia]
+        foreach it in $items[source terminal, haunted doghouse, Witchess Set, potted tea tree, portable mayo clinic, Little Geneticist DNA-Splicing Lab, cornucopia, TakerSpace letter of Marque]
         {
             if (campground contains it)
                 __iotms_usable[it] = true;
