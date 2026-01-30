@@ -117,6 +117,79 @@ Update the version number in [Settings.ash](Source/relay/KoLmafia-Guide/Settings
 string __version = "2.0.7";
 ```
 
+## IOTM Implementation Guide
+
+### Files to Modify
+
+When adding a new IOTM, you need to touch these files:
+1. **Create**: `Source/relay/KoLmafia-Guide/Items of the Month/YourIOTM.ash`
+2. **Edit**: `Source/relay/KoLmafia-Guide/Items of the Month/Items of the Month import.ash` - add import
+3. **Edit**: `Source/relay/KoLmafia-Guide/Support/IOTMs.ash` - add to `__iotms_usable` detection (for workshed/campground items)
+
+### Registration Pattern
+
+IOTMs register callback functions that Guide calls to generate entries:
+
+```ash
+// For resource tracking (right sidebar)
+RegisterResourceGenerationFunction("IOTMYourIOTMGenerateResource");
+void IOTMYourIOTMGenerateResource(ChecklistEntry [int] resource_entries)
+{
+    if (!yourIOTMIsAvailable()) return;
+    // Build description and add entry
+    resource_entries.listAppend(ChecklistEntryMake(ITEM_ID, "__item item name", url,
+        ChecklistSubentryMake(title, modifiers, description), importance));
+}
+
+// For task suggestions (main checklist)
+RegisterTaskGenerationFunction("IOTMYourIOTMGenerateTasks");
+void IOTMYourIOTMGenerateTasks(ChecklistEntry [int] task_entries,
+    ChecklistEntry [int] optional_task_entries, ChecklistEntry [int] future_task_entries)
+{
+    // task_entries = important tasks
+    // optional_task_entries = optional/reminder tasks
+    // future_task_entries = tasks for later
+}
+```
+
+### Common Utility Functions
+
+```ash
+// Property access
+get_property_int("propertyName")           // Integer properties
+get_property_boolean("propertyName")       // Boolean properties
+get_property("propertyName")               // String properties
+get_property_ascension("propertyName")     // Returns true if property equals current ascension number
+
+// List utilities
+listMake("a", "b", "c")                    // Create string array
+listAppend(list, "item")                   // Add to list
+listJoinComponents(list, ", ")             // Join with delimiter
+
+// HTML helpers
+HTMLGenerateSpanFont(text, "red")          // Colored text
+
+// Game state
+__misc_state["in run"]                     // True if in-run
+__misc_state["campground unavailable"]     // True if no campground access
+get_campground()                           // Returns int[item] map of campground items
+```
+
+### Property Naming Conventions
+
+- `_propertyName` (underscore prefix) = Daily property, resets each rollover
+- `propertyName` (no underscore) = Persistent property
+
+### Template Reference
+
+**[Leprecondo.ash](Source/relay/KoLmafia-Guide/Items of the Month/Leprecondo.ash)** is the best template for complex IOTMs with:
+- State parsing (comma-separated values)
+- Daily counters
+- Resource tracking
+- Both Resource and Task generation
+
+**[Latte.ash](Source/relay/KoLmafia-Guide/Items of the Month/Latte.ash)** is a simpler template for basic daily resource tracking.
+
 ## IOTM Research Resources
 
 When implementing new Items of the Month, these resources are helpful:
@@ -125,6 +198,6 @@ When implementing new Items of the Month, these resources are helpful:
 - **[KoLmafia source code](https://github.com/kolmafia/kolmafia)** - Check `src/data/defaults.txt` for property names and tracking
 
 **Note on Wiki Access:**
-- **wiki.kingdomofloathing.com** - Returns 403 Forbidden for Claude requests
+- **wiki.kingdomofloathing.com** - Returns 403 Forbidden for Claude requests, possibly use powershell workaround
 - **kol.coldfront.net/thekolwiki** - Often unavailable (connection refused) and may be out of date
 - Use loathers.net analysis and KoLmafia source code as primary references
