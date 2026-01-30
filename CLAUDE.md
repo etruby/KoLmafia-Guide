@@ -229,7 +229,7 @@ Some IOTMs provide bonuses for specific quests rather than general daily resourc
 
 ## Session End Checklist
 
-At the end of each coding session, complete these steps:
+When the user says "wrap it up" (or similar), complete these steps:
 
 1. **Update IOTM_IMPLEMENTATION_PLAN.md** - Mark completed items with ✅
 2. **Document learnings in CLAUDE.md** - Add any new patterns, gotchas, or useful techniques discovered

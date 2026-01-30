@@ -227,6 +227,6 @@ void SSkillsGenerateResource(ChecklistEntry [int] resource_entries)
     }
     if (!get_property_boolean("_eldritchTentacleFought") && my_path_id_legacy() != PATH_EXPLOSIONS)
     {
-        resource_entries.listAppend(ChecklistEntryMake(225, "__skill Evoke Eldritch Horror", "place.php?whichplace=forestvillage", ChecklistSubentryMake("Free Science Tent Tentacle fight", "", ""), 5).ChecklistEntryTag("daily free fight"));
+        resource_entries.listAppend(ChecklistEntryMake(225, "__skill Evoke Eldritch Horror", "place.php?whichplace=forestvillage&action=fv_scientist", ChecklistSubentryMake("Free Science Tent Tentacle fight", "", ""), 5).ChecklistEntryTag("daily free fight"));
     }
 }
