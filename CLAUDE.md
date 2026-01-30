@@ -13,7 +13,7 @@ This is **Guide** (aka KoLmafia-Guide), a relay script for [KoLmafia](http://kol
 - **Version**: Current version is tracked in [Source/relay/KoLmafia-Guide/Settings.ash](Source/relay/KoLmafia-Guide/Settings.ash) (`__version` variable)
 
 ### Web Content Fetching (for getting around 403 errors)
-When needing to fetch web content (documentation, specifications, etc.) and the WebFetch tool is blocked or returns poor results, use a local script instead:
+When needing to fetch web content (documentation, specifications, etc.) and the WebFetch tool is blocked or returns poor results, use a local script instead. Only use if the initial WebFetch fails:
 powershell
 
 # PowerShell example

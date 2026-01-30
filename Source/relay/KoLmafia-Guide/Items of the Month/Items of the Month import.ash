@@ -80,3 +80,4 @@ import "relay/KoLmafia-Guide/Items of the Month/Monodent of the Sea.ash";
 import "relay/KoLmafia-Guide/Items of the Month/Allied Radio Backpack.ash";
 import "relay/KoLmafia-Guide/Items of the Month/Mobius Ring.ash";
 import "relay/KoLmafia-Guide/Items of the Month/Leprecondo.ash";
+import "relay/KoLmafia-Guide/Items of the Month/April Shower Thoughts Calendar.ash";
