@@ -173,6 +173,11 @@ HTMLGenerateSpanFont(text, "red")          // Colored text
 __misc_state["in run"]                     // True if in-run
 __misc_state["campground unavailable"]     // True if no campground access
 get_campground()                           // Returns int[item] map of campground items
+
+// Checklist entries
+ChecklistEntryMake(universal_id, image, url, subentry, importance)
+// universal_id: Required int parameter (first arg) - use sequential IDs within each file
+// Example: Misc Tasks.ash uses 392-401, find the next available ID in the file you're editing
 ```
 
 ### Property Naming Conventions

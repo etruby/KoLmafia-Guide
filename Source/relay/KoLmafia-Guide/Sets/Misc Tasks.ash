@@ -261,4 +261,17 @@ void SMiscTasksGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntry [
             optional_task_entries.listAppend(ChecklistEntryMake(400, "__item " + $item[dry cleaning receipt], "inventory.php?which=3", ChecklistSubentryMake("Use " + $item[dry cleaning receipt], "", "For " + receipt_item + " accessory."), 8));
         }
     }
+
+    // Clover purchases available from the Hermit
+    if (__misc_state["in run"])
+    {
+        int clovers_purchased = get_property_int("_cloversPurchased");
+        int clovers_remaining = 3 - clovers_purchased;
+        if (clovers_remaining > 0)
+        {
+            string [int] description;
+            description.listAppend(clovers_remaining + " clover" + (clovers_remaining != 1 ? "s" : "") + " available for purchase today.");
+            optional_task_entries.listAppend(ChecklistEntryMake(401, "__item ten-leaf clover", "hermit.php", ChecklistSubentryMake("Buy clovers from the Hermit", "", description), 8));
+        }
+    }
 }
