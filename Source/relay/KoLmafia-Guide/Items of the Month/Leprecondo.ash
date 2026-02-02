@@ -95,7 +95,7 @@ void IOTMLeprecondoGenerateResource(ChecklistEntry [int] resource_entries)
 	initLeprecondoFurnitureData();
 
 	string [int] description;
-	string url = "place.php?whichplace=leprecondo";
+	string url = "inv_use.php?whichitem=11861&pwd=" + my_hash();
 
 	// Get current state
 	string current_need = get_property("leprecondoCurrentNeed");
@@ -246,6 +246,6 @@ void IOTMLeprecondoGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEnt
 		description.listAppend("*Familiar XP: karaoke + treadmill + couch");
 		description.listAppend("*Crafting: internet-connected laptop");
 
-		optional_task_entries.listAppend(ChecklistEntryMake(11861, "__item Leprecondo", "place.php?whichplace=leprecondo", ChecklistSubentryMake("Set up Leprecondo furniture", "", description), 8));
+		optional_task_entries.listAppend(ChecklistEntryMake(11861, "__item Leprecondo", "inv_use.php?whichitem=11861&pwd" + my_hash(), ChecklistSubentryMake("Set up Leprecondo furniture", "", description), 8));
 	}
 }

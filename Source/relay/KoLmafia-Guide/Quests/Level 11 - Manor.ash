@@ -112,7 +112,7 @@ void QLevel11ManorGenerateTasks(ChecklistEntry [int] task_entries, ChecklistEntr
                         image_name = "monstrous boiler";
                         
                         int ml_needed = 82;
-                        int inherent_ml_modifier = 0;
+                        int inherent_ml_modifier = monster_level_adjustment();
                         //if (my_path_id_legacy() == PATH_HEAVY_RAINS) //need to test this
                             //inherent_ml_modifier = 82 - 40; //maybe?
                         ml_needed -= inherent_ml_modifier;
